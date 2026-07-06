@@ -1,0 +1,24 @@
+{
+  "name": "claude-qwen-tts",
+  "owner": {
+    "name": "HariFatherKR",
+    "email": "harifatherkr@gmail.com"
+  },
+  "metadata": {
+    "description": "Qwen3-TTS based Korean/multilingual text-to-speech plugin",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "claude-qwen-tts",
+      "source": "./plugins/claude-qwen-tts",
+      "description": "Qwen3-TTS based high-quality Korean/multilingual text-to-speech synthesis. Voice clone, voice design, and script-to-audio conversion.",
+      "version": "1.0.0",
+      "author": {
+        "name": "HariFatherKR"
+      },
+      "keywords": ["tts", "qwen", "voice", "korean", "audio", "speech"],
+      "category": "audio"
+    }
+  ]
+}

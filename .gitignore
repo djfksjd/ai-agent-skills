@@ -1,0 +1,38 @@
+# ── Secrets (절대 커밋 금지) ──
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*_key.json
+*credentials*.json
+service-account*.json
+secrets/
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+
+# ── Node ──
+node_modules/
+
+# ── 생성 산출물 (미디어) ──
+*.wav
+*.mp3
+*.mp4
+*.m4a
+*.mov
+*.png
+*.jpg
+outputs/**/*
+output/**/*
+!**/.gitkeep
+
+# ── OS / 에디터 ──
+.DS_Store
+Thumbs.db
+*.log
