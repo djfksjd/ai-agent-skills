@@ -1,0 +1,7 @@
+{
+  "months": 12,
+  "monthly_fixed_cost": "1000000",
+  "plans": [
+    {"name":"가상 월 요금제","price_including_tax":"19800","tax_rate":"0.10","cycle_months":1,"monthly_variable_per_customer":"3000","active_customers":[0,0,5,10,15,20,25,30,35,40,45,50]}
+  ]
+}
