@@ -1,0 +1,18 @@
+{
+  "vat_rate": 0.1,
+  "monthly_fixed_cost": 100000,
+  "monthly_team_pay": 0,
+  "products": [
+    {
+      "name": "가상 월 구독",
+      "price_including_vat": 11000,
+      "price_period_months": 1,
+      "monthly_variable_cost": 1000,
+      "active_customers": [
+        0,
+        5,
+        10
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+outputs/
+private/
+project-state.md
+*.pptx
+*.pdf
+*.docx
+.env
+.env.*
+!.env.example

@@ -1,0 +1,6 @@
+interface:
+  display_name: "IR & SCRIPT"
+  short_description: "한국·해외 사례 조사부터 IR 슬라이드·발표대본·Q&A까지"
+  default_prompt: "Use $ir-script to research relevant IR examples and create an evidence-backed deck, synchronized speaker script, and Q&A."
+policy:
+  allow_implicit_invocation: true
