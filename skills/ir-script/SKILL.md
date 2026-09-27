@@ -1,7 +1,7 @@
 ---
 name: ir-script
-description: Research Korean and international IR examples, then create or revise evidence-backed investor decks, synchronized speaker scripts and Q&A. Use for IR, pitch decks, demo days, investor presentations, earnings presentations, IR 발표자료 and 발표대본; not for investment recommendations or generic document summaries.
-license: MIT (newly authored skill files only; see LICENSE)
+description: Research Korean and international IR examples, then create evidence-backed investor pitch decks, synchronized speaker scripts and Q&A. Use for IR 자료, 투자제안서, 발표대본, demo-day pitches, fundraising decks and earnings presentations. Not for stock recommendations or generic document summaries.
+license: MIT; see LICENSE for scope
 metadata:
   display-name: IR & SCRIPT
   version: "1.0.0"
@@ -9,76 +9,88 @@ metadata:
 
 # IR & SCRIPT
 
-Create the slides and spoken story as one versioned product. Use the user's language. Instructions are English; Korean examples illustrate editorial preferences.
+Create the deck and its spoken story as one versioned deliverable. Use the user's language. This is an agent workflow: the host supplies web, document and execution tools. The bundled Python code is an offline baseline, not an autonomous research service.
 
-Read `references/research.md` for sources and access limits; `references/story-and-copy.md` for narrative, research coverage, copy and delivery; `README.md` for installation and commands. Read only the parts needed. Use the host's installed presentation/PDF/document instructions before artifact work.
+## Load progressively
 
-## 1. Recover the actual project
+- Research and reference access: `references/research.md`.
+- Story, style, business checks: `references/story-and-copy.md`.
+- Baseline contract: `templates/deck.example.json` and `README.md`.
+- Reusable local state: `templates/project-state.md`.
+- Final review: `templates/release-checklist.md`.
 
-Read supplied files and relevant authorized connected sources, not only assistant summaries or memory. Record input filenames, hashes, dates, actual main/appendix counts and script headings in a local `project-state.md` based on `templates/project-state.md`. Preserve the user's terms and decisions. Distinguish user sources, outside research and your proposals.
+## 1. Restore the actual project
 
-Compare versions before pairing a deck and script. Matching filenames do not prove synchronization. Record count, order, title and appendix-boundary mismatches. Keep originals. Propose a canonical version and mapping; ask before a material change would discard source content or alter user decisions. Do not claim access to missing chats, local files, remote history or Cowork memory.
+Read the supplied source files and relevant connected resources before drafting. Treat them as the requested basis, preserving terminology and decisions. Distinguish source-derived content, new external research, inference and your proposed changes. Do not replace unseen user content with general advice.
+
+Record input filenames, hashes, dates, actual slide counts, main/appendix boundary, script headings and read scope in a LOCAL project-state file. Compare slide and script order, not just filenames. When versions conflict, report the mismatch; preserve both. Ask a focused question if choosing one would discard or alter a substantive decision. Otherwise propose a mapping as a clearly labeled draft. Do not pretend to have read hidden memory, local disks or Cowork sessions.
+
+Before creating files, read the host's installed presentation/PDF/document guidance. Do not publish user inputs or local project-state to a public repository.
 
 ## 2. Define the presentation contract
 
-Identify company stage, audience, objective, language, live versus send-ahead format, speaking time excluding Q&A, output formats and next decision/ask. Investor fundraising, startup competitions, pilot recruitment and listed-company earnings need different narratives. Do not invent a funding amount, team credential, founder anecdote, customer or test result. Mark unspecified inputs rather than fabricate them.
+Establish audience, company stage, goal, language, talk duration excluding Q&A, live versus send-ahead delivery and requested formats. Distinguish fundraising, competition scoring, pilot recruitment and public-company earnings. Preserve an actual judging rubric when provided. Do not invent a round size, valuation, customers, credentials, quotes, founder anecdotes or traction. Leave missing essentials explicitly unresolved.
 
-For a full IR, cover founder reason, problem evidence, current alternatives, solution mechanism, product use, first buyer, market denominator, revenue model, economics, acquisition, traction, execution, team and ask. Coverage does not mandate one slide per topic or a rigid order.
+Coverage: why the founder started; the customer's current workflow and documented problem; alternatives; mechanism and product journey; buyer and market denominator; business model and costs; acquisition and retention; traction and development status; team; milestones and ask. These are coverage questions, not a fixed slide order.
 
-## 3. Research Korean and international references
+## 3. Research examples and the business
 
-Start with supplied references, then inspect relevant primary sources: actual company decks, official event videos, founder retrospectives, investor guidance and official transcripts. Match stage, audience and business model before geography. Use current official sources for volatile facts. Record queries and access failures; do not pad a reference quota with irrelevant links.
+Start with the user's references, then search current primary sources. Select comparable Korean and international cases by stage, audience and business model, not nationality alone. Use actual company decks, founder retrospectives, official event videos/transcripts and investor guidance. Separate earnings calls from early-stage pitches.
 
-For each source record URL, publisher, publication/retrieval dates, country, stage, audience, medium, access, observed pages/sections/timestamps, actual sequence, usable pattern and limits. Separate observed source order from your proposed deck order. A company article about a deck does not establish every slide's sequence. Read page images for visual layout, tables and charts.
+For each source record publisher, original date, retrieval date, URL, country, stage, audience, medium, access level, observed pages/sections/timestamps, useful pattern and limits. Record search queries and failed access. A source list is not an analysis: explain what was observed, why it helps this project, what should not be copied, and the proposed adaptation.
 
-Video access states: `video_and_transcript`, `transcript_only`, `selected_frames`, `metadata_only`, `unavailable`. Prefer official captions or user-authorized transcripts; mark automatic transcription and cross-check numbers with slides. A title or third-party AI summary is not full viewing. Never invent timecodes, speaker quotations, metrics or segment boundaries. Do not bypass authentication, payment, CAPTCHA or access controls. When access fails, report it and use other inspected primary sources without pretending to analyze the inaccessible talk.
+Video access: `video_and_transcript`, `transcript_only`, `selected_frames`, `metadata_only`, `unavailable`. Use official captions or user-authorized transcripts; label machine transcripts and check numbers against visuals. A title or third-party summary cannot establish chronology, tone, slides, metrics or exact words. Never invent timestamps or bypass access controls. For compilation videos, identify company boundaries only when observed. Continue useful work from accessible primary material and disclose any video gap.
 
-Store original analytical notes and links, not complete third-party decks or transcripts. Reference seeds are historical observations, not evergreen verification of current facts.
+Inspect PDF page images when interpreting tables, charts or design. Keep short original notes and links, not complete copyrighted decks/transcripts. References in this package are research seeds with dated access, not an evergreen factual database.
 
-## 4. Research the business and audit claims
+## 4. Build an evidence ledger
 
-Create stable claim IDs and a source ledger. Status: `verified`, `user_provided`, `hypothesis`, `target`, `calculation`, `unverified`. Verification requires actual inspected support and exact locators. Marketing copy establishes what a vendor advertises, not independent performance. Preserve historical metric dates.
+Give every substantive claim a stable ID and status: `verified`, `user_provided`, `hypothesis`, `target`, `calculation`, `unverified`. Link sources and exact locators. Vendor marketing verifies what a vendor advertises, not independent performance. Partial access supports only the observed passage. Recheck prices, plan policies, market figures and live product functions when used.
 
-Problem: distinguish founder motivation, documented workflow, customer interviews and measured cost. Do not invent time saved or turn an anecdote into a market fact.
+Verify problems through distinct layers: founder motivation, official workflow, customer interviews and measured cost. Compare competitors on the same task, output, seats, period, tax basis and usage scope. 'Not confirmed in reviewed sources' is not 'absent'. State superiority only with a fair test. Do not remove a competitor's recommendation function to claim it only writes documents.
 
-Competition: compare direct alternatives, manual work and relevant general tools on the same task, plan, period, tax/seat basis and output scope. Use 'not confirmed in reviewed material' rather than 'absent'. Never suppress a competitor's existing recommendation feature to create a writing-only straw man. Superiority needs a comparable test.
+Use relevant unique buyers, willingness to pay and paid months for market size. Government budgets, GMV and industry turnover are not software revenue. Unsupported denominators belong in a labeled scenario, not a claimed TAM. Separate tax-inclusive billings, net revenue, monthly/annualized run-rate and cumulative revenue. Show acquisition timing, retention, inference/support/fees and founder/team costs. Recompute formulas with code; the financial helper is a limited scenario model, not accounting advice.
 
-Market: estimate unique relevant buyers, willingness to pay and paid periods. Support TAM/SAM/SOM denominators or show a labeled scenario. Government grants, GMV and industry budgets are not software revenue. Avoid double counting and arbitrary '1% share'.
+Preserve the user's AI connection model: official CLI subscription is not BYOK. Recheck provider authentication, commercial integration and data rules. Local invocation does not prove permission. Separate workflow fee, external AI plan and managed inference. Local storage does not imply offline processing or zero outbound data. Code existence, implementation, tested deployment, stars, installs and paid customers are different evidence levels.
 
-Business model: separate workflow subscription, personal third-party AI subscription, managed inference, onboarding and institutional support. Do not silently substitute BYOK API keys for the user's official CLI subscription connection. Recheck provider authentication, commercial integration and data conditions. Local invocation alone does not establish permission.
+Keep essential qualifiers next to claims. Put short source/status labels on slides and full references in notes plus the shared PDF's reference appendix. Do not bury material caveats. Do not make the whole main deck sound like an audit report.
 
-Financials: separate VAT-inclusive billings, net revenue, cash receipts, MRR/annualized run-rate and cumulative revenue. Include cohort timing, churn, AI costs, fees, acquisition, support and founder/team compensation. Recalculate; do not manufacture precision. `scripts/financials.py` is a limited monthly-recognition scenario helper, not a full cash-flow or accounting model.
+## 5. Choose a story and synchronize it
 
-Product: local storage does not mean offline inference or zero outbound data. Separate implemented, tested, deployed and planned. Source code, stars, downloads, active users, customers and renewals are distinct evidence.
+Write a one-sentence product definition and three takeaways. Compare two plausible orders, select one with a project-specific reason, then create a storyboard. Consider problem-led, product-led or traction-led order; do not imply a universal winning sequence. Use the actual rubric when required.
 
-Keep essential uncertainty next to the claim, with full references in notes/appendix. Do not fill the main presentation with internal audit commentary or remove material caveats for persuasion.
+Each slide has stable ID, main/appendix kind, audience question or role, concrete title, one takeaway, claims, visual plan, planned seconds, spoken text, cue and transition. Main slides carry the case. Detailed calculations, legal/provider conditions, full competitor tables and methodology generally belong in appendices unless essential to the central claim. No unsupported investment ask.
 
-## 5. Build a story before slides
+Keep final copy, order, scripts and Q&A in canonical `deck.json`. Main and appendix slides must have distinct IDs. Q&A points to real appendix IDs. After edits, regenerate all exports; do not silently pair an old script with a revised deck. Rich host renderers may extend this data model, but must retain IDs and verify synchronization.
 
-Write a plain product definition and three takeaways. Consider two plausible orders, select one based on evidence/audience, and explain the choice in a structure report. Use conditional recipes in `references/story-and-copy.md`; follow a supplied evaluation rubric where applicable.
+## 6. Edit the slide and spoken layers separately
 
-Storyboard each slide with stable ID, main/appendix kind, audience question, role, title, one takeaway, supporting claim IDs, visual specification, planned seconds, spoken text, cue and transition. Main slides carry the business case. Put detailed methods, evidence tables and sensitivities in the appendix unless needed to understand a material central constraint. Do not pad with generic 'Executive Summary / Problem / Solution' placeholders.
+Headlines: short concrete phrases or deliberate short assertions. For Korean, review repeated '~합니다/~됩니다/~했습니다', editorial narration ('자료를 정리했습니다'), empty superlatives and repetitive '~가 아닌' contrasts. This is a style preference, not proof of AI authorship. Do not mechanically turn every sentence into awkward nouns. Keep informative existing titles.
 
-## 6. Write slide copy and spoken copy differently
+Body: a visible point needs a purpose and evidence, not a paragraph copied from the business plan. Script: natural spoken language with short sentences; polite Korean is appropriate here. Explain the evidence, connect slides and pause; do not read every bullet. Keep spoken words, stage cues, transitions and verification notes separate.
 
-Visible Korean headings should normally be concrete short phrases or meaningful short claims. Audit every title, subtitle, table, caption and note. Remove repetitive '~합니다/~됩니다/~했습니다', author narration ('구분했습니다'), empty superlatives and repetitive '~가 아닌'. This is an editorial choice, not AI-authorship detection. Allow an intentional sentence with a recorded reason; do not replace precise claims with vague nouns.
+Estimate time with an explicit adjustable rate and demo/pause allowance. A word-count calculation is not rehearsal. Provide shorter variants when requested without changing facts. Prepare Q&A on buyer, alternatives, moat, market, retention, costs, team, data, milestones and ask; answer missing-data questions honestly.
 
-Speaker text should be complete, conversational and naturally polite, not a list of slide fragments. Explain evidence rather than reading all bullets. Separate words to say from cues, transitions, sources and non-spoken qualifications. Include pauses and demos. Timing is an adjustable estimate until an actual rehearsal. A short-script variant must retain the same fact limits.
+## 7. Build, render and test
 
-Prepare Q&A with a direct answer, supporting claims, actual appendix ID and unresolved issue. Cover customer, alternatives, market assumptions, defensibility, retention, costs, data, execution, team and ask. Never bluff missing evidence.
+Prefer the host's capable editable slide engine and preserve user branding/templates. Use product evidence, diagrams and charts where informative; label mockups. Avoid identical card walls, decorative 3D, tiny caveats, broken Korean glyphs, ornamental 'AI' visuals and made-up screenshots. Do not force 3D onto software IR.
 
-## 7. Generate and verify one canonical release
+Fallback commands (run from this skill folder):
 
-Use `deck.json` as the single source of slide IDs/order/copy/script/Q&A. Prefer the host's specialized artifact engine for rich editable visuals while preserving these IDs. Label mockups, never fabricate screenshots; use 3D only where it explains a product. Respect supplied branding and avoid identical card layouts throughout.
+```bash
+python scripts/pipeline.py lint deck.json --strict-style
+python scripts/pipeline.py build deck.json --out /path/to/new-release --pdf --strict-style
+python scripts/pipeline.py verify /path/to/new-release
+```
 
-The bundled Python compiler is an **offline baseline**, not a web-research agent, advanced visualization tool or API wrapper. It produces editable PPTX, script DOCX/Markdown, Q&A Markdown, claim CSV, QA report and hash manifest; optional PDF conversion requires installed LibreOffice. It performs no paid AI calls or credential handling.
+The baseline emits editable PPTX, DOCX speaker script, Markdown script/Q&A, claim CSV, canonical JSON, QA report and checksummed manifest. PDF requires separately installed LibreOffice. It supports cover/columns/process layouts and small copy budgets; use a richer host engine for charts, real screenshots and complex tables. Do not degrade a good deck to fit the fallback.
 
-Run `python scripts/pipeline.py lint deck.json --strict-style`, then `build`. The baseline rejects copy too dense for its layout; shorten it or use a custom renderer rather than disabling validation. Render and inspect **every** slide and script page with host tools. Check Korean glyphs, clipping, overlap, scales, contrast, source labels, pagination and main/appendix order. Automated lint is not fact verification, visual inspection or rehearsal. When rendering is unavailable, state the gap, not 'visually checked'.
+Fix lint failures; do not simply disable guards. Render every slide and script page, inspect all at useful size, correct clipping/overlap/contrast/labels/flow and rerender. Automated validation is not fact checking, visual QA or rehearsal. Do not report an unexecuted test as passed. Missing conversion/render tools must be disclosed.
 
-Run `verify` after generation. After manual PPT/DOCX edits, reconcile back into canonical JSON and rebuild. Use `check-sync` against extracted script IDs/kinds/titles when comparing old versions. A manifest detects consistency changes, not tamper-proof authenticity.
+`check-sync deck.json extracted-script-manifest.json` compares IDs, kinds, titles and order. For existing PDFs/scripts, first extract their actual headings; do not infer a mapping from similar filenames. Hash validation detects changes, not malicious tampering or source truth. A manual PowerPoint edit requires reconciliation and a new release.
 
-## 8. Deliver and persist honestly
+## 8. Handoff
 
-Deliver requested files, research/structure rationale, Q&A, claim sources and a QA report naming tests actually run and missing checks. Persist local project state after each stage: inputs, decisions, sources, outstanding questions and next action. Do not claim durable account memory was updated.
+Deliver requested PPTX/PDF, script DOCX/PDF/Markdown, Q&A, research and structure rationale, sources and QA status. State what is missing. Persist local state after research, storyboard and release: decisions, source IDs, unresolved claims, canonical version, tests, next action. This is local continuity, not an account-memory update.
 
-Never publish private originals, customer data, credentials, generated company decks, third-party full media or font files without explicit scope approval. Keep only synthetic examples in a public skill repository. GitHub publication, local installation and ChatGPT/Cowork account registration are separate operations. Report only completed actions.
+Do not upload user/company documents, credentials or third-party media without explicit publication scope. Publishing this skill to GitHub, installing on a local machine, and enabling in ChatGPT/Cowork/cloud sessions are separate operations. Report only the operations actually completed.

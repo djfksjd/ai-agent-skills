@@ -1,116 +1,100 @@
-# Research register
+# Research notes and access ledger
 
-Last inspected: **2026-09-28**. Research seeds and short original analytical notes; not a permanent truth database. No full third-party deck or transcript is redistributed. “Read” below refers to the described scope only. The workflow must repeat current-source checks for each company and presentation.
+Researched 2026-09-28. Short original analytical notes, not redistributed decks or transcripts. Entries are reference seeds; refresh when used for current facts. Company figures are deliberately not transplanted into templates. 'Observed' below is limited to the stated access; 'Application' is our synthesis, not the source's prescribed universal rule.
 
-## Ten presentation references
+## Startup fundraising and presentation guidance
 
-### R01 · Korean founder pitch video — metadata only
-- URL: https://youtu.be/w4n9Y_5msuo
-- Page title: `[정주영 창업경진대회 10] 최우수상 실비아 발표 | 5분 다시보기`.
-- Region / audience: Korea / startup competition, as described in the title.
-- Date: original upload date not verified; retrieval 2026-09-28.
-- Access: `metadata_only`. YouTube page returned title and footer, not captions, playback or observed slide images.
-- Observed sequence: **not established**. No timecodes, founder delivery claims or product metrics extracted.
-- Use: a user-selected reference to revisit when an authorized transcript or readable video is available. Do not derive a five-minute script from its title alone.
+### R01 — YC / A Guide to Demo Day Presentations
+- URL: https://www.ycombinator.com/blog/guide-to-demo-day-pitches
+- Original: 2016-07-25. US accelerator guidance; text article, not one company pitch.
+- Access: article text, sections Presentation Organization, Slides, Preparation and Common Errors.
+- Observed: organization is flexible; product clarity, audience, bottom-up opportunity and practice are emphasized. It contrasts telling a story with simply narrating a slide stack.
+- Application: choose sequence based on actual evidence; make a concise live talk and put detailed proof in backup material. Do not treat a generic outline or a word limit as a fixed law.
 
-### R02 · Korean multi-company pitch compilation — metadata only
-- URL: https://youtu.be/PWY_TQYMNBY
-- Page title: `[#모아보기️] 길이 없으면 길을 만드는 차세대 정주영들의 무대 | 트랙별 피칭 | 2025 정주영 창업경진대회`.
-- Region / audience: Korea / competition compilation. “2025” is in the title; exact upload date not verified.
-- Access: `metadata_only`, retrieved 2026-09-28. No transcript or playback obtained.
-- Observed company boundaries and slide order: **unknown**. Do not combine different companies into one invented pitch.
-- Use: retain the link and access gap; request a transcript only when this particular example is indispensable. Continue useful work from inspected primary sources.
+### R02 — YC / How to Design a Better Pitch Deck
+- URL: https://www.ycombinator.com/blog/how-to-design-a-better-pitch-deck
+- Original: 2015-11-15. US design guidance.
+- Access: article text; not a frame-by-frame analysis of embedded media.
+- Observed: legibility, simplicity and immediately understandable visual meaning are central.
+- Application: design for the person listening in the room; separate the visible slide from what the presenter says. Sparse slides do not remove the need for complete evidence notes.
 
-### R03 · Sequoia — Writing a Business Plan
+### R03 — Sequoia / Writing a Business Plan
 - URL: https://sequoiacap.com/article/writing-a-business-plan/
-- Publisher: Sequoia Capital; date not displayed in inspected article; US/investor guidance.
-- Access: article `full_text`; retrieved 2026-09-28.
-- Observed article order: company purpose, customer problem, solution, why now, market, alternatives, business model, team, financials, vision.
-- Adaptation: use these as content coverage checks. Explain the buyer and current alternative, not just product functions. A five-year vision is not a verified forecast.
-- Limit: this is an investor's writing guide, not an empirical guarantee of fundraising or a mandatory slide count.
+- Original date: not confirmed in inspected page. US investor guidance.
+- Access: published section sequence: company purpose, problem, solution, why now, market, competition, business model, team, financials, vision.
+- Application: use these as coverage questions, not an automatic 10-slide ordering. A concise product definition precedes unexplained market jargon.
 
-### R04 · Y Combinator — A Guide to Demo Day Presentations
-- URL: https://www.ycombinator.com/blog/guide-to-demo-day-pitches/
-- Publisher/author: Y Combinator / Geoff Ralston; 2016-07-25; US/early-stage demo-day guidance.
-- Access: article `full_text`; retrieved 2026-09-28.
-- Observed sections: presentation qualities, key points, audience, organization, slides, preparation, presenter, technique, common errors.
-- Adaptation: define what is being built early, build around a few memorable points, choose order from evidence, and rehearse transitions. The article permits strong traction to appear early and distinguishes interest in a follow-up meeting from an immediate investment.
-- Limit: its short-stage format is not a complete due-diligence memo. Do not impose its English word-count tips literally on Korean or dense send-ahead financial appendices.
+### R04 — Front / Inside Front's series A slide deck
+- URL: https://front.com/blog/inside-fronts-series-a-slide-deck
+- Original: 2016-08-02; article includes later editorial links. US SaaS, Series A.
+- Access: founder's retrospective text, especially investor feedback; embedded Slideshare itself was not inspected in this research.
+- Observed: founder described capital efficiency and customer expansion as strengths; acquisition channels and projections as weaknesses; more usage and buyer detail as useful additions.
+- Application: require distribution, retention, buyer and capital-use reasoning rather than product features alone. No exact slide chronology claimed.
 
-### R05 · Y Combinator — How to Design a Better Pitch Deck
-- URL: https://www.ycombinator.com/blog/how-to-design-a-better-pitch-deck/
-- Publisher/author: Y Combinator / Kevin Hale; 2015-11-15; US/demo-day design guidance.
-- Access: article text read; linked or embedded videos not watched; retrieved 2026-09-28.
-- Observed focus: legibility, simple slides, obvious meaning, and removal of distracting material. The article discusses a short demo-day setting.
-- Adaptation: one main idea per slide, readable contrast and text, simplified product workflow when a full screenshot is illegible.
-- Limit: these are design judgments, not an AI-writing detector or proof that one visual style increases funding.
+### R05 — Front / Series D deck
+- URL: https://front.com/blog/front-series-d-deck
+- Original: 2022-06-30. US SaaS, growth-stage fundraising.
+- Access: founder article sections The process and The environment; embedded deck not independently inspected.
+- Observed: introductory discussion, deck and later diligence are distinct stages; unit economics and the profitability path received attention in this round.
+- Application: keep main talk and data room separate; do not copy growth-stage financial standards or historical investor sentiment into a pre-seed company as current fact.
 
-### R06 · Front — Series B founder retrospective
-- URL: https://front.com/blog/front-series-b-deck
-- Publisher/author: Front / Mathilde Collin; displayed 2018-03-19; US/SaaS growth fundraising.
-- Access: article `full_text`; embedded Slideshare deck **not inspected**; retrieved 2026-09-28.
-- Observed article order: fundraising process, received feedback, tactical advice. Feedback discusses usage, capital efficiency, cohorts and lead generation, alongside churn and customer-addition concerns.
-- Adaptation: pair product value with customer behavior and acquisition evidence; prepare answers to weak metrics instead of hiding them.
-- Limit: article feedback is a firsthand report, not independent causal proof. It does not establish the exact full deck chronology.
+### R06 — YC / How to Pitch Your Company
+- URL: https://www.ycombinator.com/blog/how-to-pitch-your-company/
+- Original: 2016-07-19. US founder/investor guidance.
+- Access: article's seven questions and editing advice.
+- Observed question order: product, market, progress, unique insight, BM, team, ask. User-path explanation is offered as an alternative to abstract language.
+- Application: finish with a specific request and use a truthful product journey. This is another viable order, not a reason to erase founder motivation or customer evidence.
 
-### R07 · Front — Series C founder retrospective
-- URL: https://front.com/blog/front-series-c-deck
-- Publisher/author: Front / Mathilde Collin; displayed 2022-02-24; US/SaaS growth fundraising.
-- Access: article `full_text`; embedded deck not inspected; retrieval 2026-09-28. Displayed article date is not asserted as the actual pitch date.
-- Observed logic: previous milestone achievement, next milestone and required resources; subsequent feedback identifies selected slide numbers but not every slide.
-- Adaptation: connect resource requests to measurable next achievements, and distinguish an articulated acquisition plan from actual repeatability.
-- Limit: selected slide references are not a reconstructed full presentation. This later-stage evidence standard cannot be fabricated for a pre-launch company.
+## Korean examples and event context
 
-### R08 · NAVER — 2025 Q4 earnings deck
-- Index: https://navercorp.com/investment/earnings
-- PDF: https://navercorp.com/api/article/download/acd6abea-d548-441d-b69c-92ca3dee97b3
-- Publisher: NAVER; cover date 2026-02-06; Korea/listed-company results.
-- Access: 16-page PDF text parsed; visual **page 3** inspected through a screenshot. Screenshot requests for pages 4 and 14 failed; not represented as visual checks. Retrieved 2026-09-28.
-- Observed opening: dated cover, caution on provisional results, results summary. Page 3 separates quarter/year comparisons, units and footnotes in a table.
-- Adaptation: state period, unit and comparison base; isolate facts, adjustments and outlook. In a short startup pitch, move a dense results table to an appendix rather than copying its density.
-- Limit: no claim to have watched the webcast or visually checked all pages. Historical results are not current figures for another company.
+### R07 — NAVER / 2025 Q4 earnings presentation
+- Landing: https://www.navercorp.com/investment/earnings
+- PDF: https://www.navercorp.com/api/article/download/acd6abea-d548-441d-b69c-92ca3dee97b3
+- Publication: 2026-02-06. Korea, listed-company earnings; 16 pages.
+- Access: parsed PDF headings/content; page images 2, 3 and 4 specifically inspected.
+- Observed order: reporting caveat → summary → business segments → costs/profit → segment profit → cash/borrowing → appendices. Page 3 separates quarter/year comparisons and units; page 4 pairs a chart with drivers and definitions.
+- Application: date/unit/denominator discipline and a summary-to-drivers structure for earnings. Dense financial tables belong in a startup appendix, not blindly on every live-pitch slide. No video delivery analysis claimed.
 
-### R09 · Microsoft — FY2025 Q4 earnings call transcript
+### R08 — Asan Nanum Foundation / 10th startup competition recap
+- URL: https://asan-nanum.org/press/아산나눔재단-정주영-창업경진대회-온라인-데모데-2/
+- Original: 2021-08-27. Korea, early-stage demo-day context.
+- Access: official press recap, not individual slide decks or transcript.
+- Observed: multiple teams presented after a business-execution phase; the event was streamed through the foundation's YouTube channel.
+- Application: locate original company recordings and stage/rubric before comparison. A competition award or organizer's description is not evidence of a specific slide order or independently measured product superiority.
+
+### R09 — dcamp / batch program description
+- URL: https://dcamp.kr/program/batch
+- Date: dynamic page, accessed 2026-09-28. Korea, scale-up program context.
+- Access: official search-extracted program text, not a recorded company pitch.
+- Observed: this program targets already launched companies preparing to scale and describes coaching, investment and business connections.
+- Application: separate a scale-up presentation's proof requirements from an idea-stage pitch. Marketing outcome claims are not reproduced as benchmarks. This entry is context, not a talk-sequence analysis.
+
+## Public-company spoken IR
+
+### R10 — Microsoft / FY2025 Q4 earnings call
 - URL: https://www.microsoft.com/en-us/investor/events/fy-2025/earnings-fy-2025-q4
-- Publisher: Microsoft; 2025-07-30; US/listed-company earnings call.
-- Access: official transcript `full_text`; webcast not watched; retrieval 2026-09-28.
-- Observed flow: opening/context, business discussion, explicit handoff to financial results, segment discussion, outlook and questions.
-- Adaptation: write audible transitions; distinguish fiscal period, comparable growth basis and forward-looking discussion. Source Q&A answers to the same evidence as the deck.
-- Limit: do not adopt multiple executives, length or mature-company forecasts as a default startup pitch recipe. No current office-holder or financial recommendations are inferred.
+- Original: 2025-07-30. US public-company investor/analyst call.
+- Access: official text transcript. Audio/video pacing and gestures not analyzed.
+- Observed: IR introduction and reporting/forward-looking qualifications, CEO business discussion, CFO results/outlook, Q&A. The introduction distinguishes reporting bases and comparisons.
+- Application: synchronize numbers, definitions and spoken handoffs; separate realized results from guidance. Do not borrow earnings-call length or listed-company legal text wholesale for a short founder pitch.
 
-### R10 · Dcamp — organizer context, not a pitch
-- URL: https://dcamp.kr/news/media/7286
-- Publisher: Dcamp; 2026-01-23; Korea/demo-day organizer announcement.
-- Access: article `full_text`; retrieval 2026-09-28.
-- Observed: the organizer describes a demo-day format focused on batch results and follow-on opportunities.
-- Adaptation: determine whether the audience is choosing follow-up meetings, investment, partnership or a pilot before selecting the closing ask.
-- Limit: no participant slide sequence or delivered script is available from this announcement. Not counted as a viewed company pitch.
+## User-supplied video access, not analyzed talks
 
-## Technical references
+| ID | URL | Confirmed access | Not confirmed |
+|---|---|---|---|
+| V01 | https://www.youtube.com/watch?v=w4n9Y_5msuo | A third-party search result labels it a 10th competition Sylvia 5-minute highlight | Original title verification, captions, full playback, slide order, delivery and timecodes |
+| V02 | https://www.youtube.com/watch?v=PWY_TQYMNBY | User-supplied URL only | Title, company, transcript, playback and sequence |
 
-### T01 · Official OpenAI skill documentation
-https://developers.openai.com/codex/skills/ (redirects to https://learn.chatgpt.com/docs/build-skills)
-Inspected 2026-09-28: “Where Codex loads local skills”, `SKILL.md` and optional `agents/openai.yaml`. User scope `~/.agents/skills`; repository scope `.agents/skills`. A GitHub folder is not automatically an account-installed plugin. Recheck when installing on a changed host.
+Watch-page and oEmbed access attempts failed in this environment. V01 is `metadata_only` with a secondary discovery source; V02 is `unavailable`. Neither is evidence for a talk's content. Discovery for V01: https://serieamania.com/g2/bbs/board.php?bo_table=freetalk&wr_id=21370857 . This secondary page is not used to validate product facts. Retry through authorized host tools or use a user-provided transcript in a later run; do not invent an analysis from the title.
 
-### T02 · Official Claude Code skills documentation
-https://code.claude.com/docs/en/skills
-Inspected 2026-09-28: personal/project skill paths and “Skills in Cowork and cloud sessions”. Personal `~/.claude/skills`, project `.claude/skills`, command `/ir-script`. Cowork account-enabled skills and local CLI files are different; a local copy does not establish Cowork registration.
+## Technical specifications (checked 2026-09-28)
 
-### T03 · Agent Skills specification
-https://agentskills.io/specification
-Inspected 2026-09-28: `SKILL.md` frontmatter `name`/`description`, lowercase slug matching directory, optional metadata and scripts/references. Display name **IR & SCRIPT** is separate from valid machine name **ir-script**.
+- T01 OpenAI skills: https://developers.openai.com/codex/skills (redirects to https://learn.chatgpt.com/docs/build-skills). Inspected required SKILL.md, `.agents/skills` discovery, optional `agents/openai.yaml` and explicit invocation. The installer uses the documented personal directory; no claim of account registration.
+- T02 Claude Code skills: https://code.claude.com/docs/en/skills . Inspected personal `.claude/skills`, `/skill-name`, and Cowork/cloud differences. Local directory installation does not enable account skills in remote sessions; follow the official account/project route separately.
+- T03 Agent Skills format: https://agentskills.io/specification . Inspected name/description, metadata strings, optional scripts/references. Canonical name `ir-script`; UI metadata `IR & SCRIPT`.
 
-## Repeatable search worksheet
+## Search/review log and limits
 
-For a new run, log actual queries, sources opened and gaps. Useful query patterns:
-- `"<industry>" founder pitch deck site:<company-domain>`
-- `"<company>" investor presentation filetype:pdf`
-- `"<company>" earnings transcript site:<official-domain>`
-- `"<한국 회사>" IR 자료`, `"<공식 행사>" 발표 데모데이`
-- Exact user video IDs and organizer captions/transcripts.
+Queries included the two exact video IDs, official YC pitch/deck guidance, Front funding decks, NAVER earnings, Microsoft FY25 Q4 transcript and Korean official demo-day/program pages. Unrelated results were excluded. Official pages and founder articles were preferred over recycled deck galleries. We inspected one Korean company PDF and official foreign IR text; we did not watch complete videos, subscribe to competitor products, independently reproduce company metrics, or conduct customer interviews.
 
-These are proposed queries, not a claim every query was executed in this release. Select by company stage, business model, audience and evidence—not nationality stereotypes. Market/competitor research for a new company must use its own current primary sources; this register supplies presentation references only.
-
-## Source-entry contract
-
-Record `id, url, publisher, title, published_date, retrieved, country, stage, audience, medium, access, video_access, observed_locator, observed_sequence, adaptation, limitations`. A blank original date is honest; a guessed date is not. Save local drafts and decision logs privately. Do not republish complete copyrighted slides, transcripts, user inputs or font binaries.
+For each new user project add its own current competitor/market sources and relevant actual-company examples. This historical reference set is not enough to substantiate a new company's market or claims. Sources differ in purpose and access; do not advertise them as ten fully watched company pitches.

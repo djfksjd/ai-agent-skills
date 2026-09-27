@@ -1,29 +1,42 @@
 #!/usr/bin/env python3
-"""Copy this skill to a local host skill directory; never contact accounts or overwrite."""
-from __future__ import annotations
+"""Local copy only: no network, package installation, account registration or overwrite."""
 import argparse
 import shutil
 from pathlib import Path
 
-ALLOW = {"SKILL.md", "README.md", "LICENSE", "requirements.txt", "agents", "references", "scripts", "templates", "tests"}
 
-
-def install(source: Path, root: Path) -> Path:
-    source = source.resolve(); root = root.expanduser().resolve(); target = root / "ir-script"
-    if not (source / "SKILL.md").is_file(): raise ValueError("Missing SKILL.md")
-    if target.exists() or target.is_symlink(): raise FileExistsError("Existing skill preserved: " + str(target))
-    if source == root or source in root.parents: raise ValueError("Destination cannot be within source")
-    def ignore(directory, names):
-        return [n for n in names if n == "__pycache__" or n.endswith(".pyc") or (Path(directory) == source and n not in ALLOW)]
-    if any(p.is_symlink() for p in source.rglob("*")): raise ValueError("Symlinked source not supported by safe installer")
-    root.mkdir(parents=True, exist_ok=True); shutil.copytree(source, target, ignore=ignore)
+def install(host, root=None):
+    if host not in ('codex', 'claude'):
+        raise ValueError('host must be codex or claude')
+    source = Path(__file__).resolve().parents[1]
+    parent = Path(root).expanduser() if root else Path.home()/('.agents' if host == 'codex' else '.claude')/'skills'
+    target = parent/'ir-script'
+    if target.exists() or target.is_symlink():
+        raise FileExistsError('Already exists; inspect and back up before replacing: '+str(target))
+    allowed_files = ('SKILL.md', 'README.md', 'LICENSE', 'requirements.txt', 'CHANGELOG.md')
+    allowed_dirs = ('agents', 'references', 'templates', 'scripts', 'tests')
+    for sub in allowed_dirs:
+        if any(p.is_symlink() for p in (source/sub).rglob('*')):
+            raise ValueError('Symlinks are not allowed in install payload')
+    parent.mkdir(parents=True, exist_ok=True)
+    target.mkdir()
+    try:
+        for name in allowed_files:
+            shutil.copy2(source/name, target/name)
+        for name in allowed_dirs:
+            shutil.copytree(source/name, target/name, ignore=shutil.ignore_patterns('__pycache__', '*.pyc'))
+    except Exception:
+        shutil.rmtree(target)
+        raise
     return target
 
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description=__doc__); parser.add_argument("host", choices=["codex", "claude"])
-    parser.add_argument("--root", type=Path, help="Alternative parent skills directory")
-    args = parser.parse_args()
-    root = args.root or Path.home() / (".agents" if args.host == "codex" else ".claude") / "skills"
-    try: print("Copied to", install(Path(__file__).resolve().parents[1], root), "\nCheck host discovery; this does not register ChatGPT/Cowork account skills.")
-    except (OSError, ValueError) as exc: parser.exit(1, str(exc) + "\n")
+if __name__ == '__main__':
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument('host', choices=['codex','claude']); ap.add_argument('--root', type=Path)
+    a = ap.parse_args()
+    try:
+        print('Copied to '+str(install(a.host, a.root)))
+        print('Confirm discovery in your local host. This does not enable an account/Cowork skill.')
+    except (ValueError, OSError) as exc:
+        ap.exit(2, str(exc)+'\n')

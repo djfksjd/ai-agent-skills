@@ -1,74 +1,53 @@
-# Story, copy and delivery
+# Story, business review and copy
 
-These are authored editorial defaults informed by R03–R09, not quotations or a universal winning template. Select a narrative based on evidence, objective and time.
+These are editorial recipes, not empirically proven winning sequences. Research notes explain their source inspirations. Preserve a user's actual rubric and factual boundaries.
 
-## Narrative choices
+## Choose the narrative
 
-| Situation | Candidate sequence | What must support it |
-|---|---|---|
-| Pre-launch / pilot | Product definition → founder reason → documented problem → product use → mechanism → alternatives → first buyer/market → model → validation → team → ask | Honest separation of founder intent, documented workflow and unmeasured pain |
-| Clear workflow product | Product use → customer task → friction today → mechanism → alternatives → buyer → pricing → evidence → route to market → team/ask | A real or explicitly labeled design example, not a fake live demo |
-| Measurable traction | Specific traction → product/customer → retention and acquisition → alternatives → market → economics → milestones → team → use of funds | Actual cohorts, dates, unit definitions and repeatability; not stars or signups called revenue |
-| Listed-company results | Period/basis → key results → segment drivers → costs/cash → outlook → Q&A | Period-consistent disclosures; no invented guidance |
-| Korean evaluation pitch | Clear product → criterion-mapped evidence → customer/market/model → feasibility/team → next milestone | Actual competition rubric; do not assume a Korean audience always requires a fixed PSST order |
+| Situation | Useful opening | Possible middle | Ending |
+|---|---|---|---|
+| Pre-seed, little customer evidence | Product in one sentence; founder's real problem | Observed workflow → mechanism → product journey → alternatives → first buyer → pricing | Evidence to collect, capable team, milestones and actual ask |
+| Product whose value needs showing | A labeled real demonstration or truthful workflow | What changed for the user → problem evidence → competition → buyer/market → economics | Proof, distribution, team and next step |
+| Established revenue/retention | Dated, clearly defined traction | Customer expansion and product → market → repeatable acquisition → unit economics | Capital use, team and milestones |
+| Public-company earnings | Period, reporting basis, headline results | Segment drivers → costs/margins → cash → guidance | Outlook assumptions and Q&A; not a fabricated fundraising ask |
+| Korean program competition | Brief product definition aligned to rubric | Problem, feasibility, growth and team as the supplied rubric requires | Budget/milestones/program fit, not an invented rubric |
 
-Generate two plausible orders, explain the selected one in the private structure report, and remove duplicate ideas. Short stage pitches create interest; send-ahead decks must stand alone. Main deck should still answer what, who, why, how, evidence, business and next decision. Do not force every topic into a separate slide.
+An 8-minute example budget is 25s definition, 45s origin/problem, 70s product, 45s alternatives, 40s market/buyer, 45s BM, 40s proof, 50s acquisition/milestones, 40s team/ask and 40s buffers. This totals 480s including buffers. It is an adjustable planning example, not a speaking-speed study. Avoid squeezing an entire dense appendix into the talk. A 5-minute version should remove secondary detail, not speed up the speaker.
 
-## Coverage gates
+## Required analytical outputs
 
-**Origin/problem:** founder's actual experience and motivation; current workflow; documented constraints; any interviews with dates, sample and method; unmeasured cost labeled. Do not invent a failure story.
+**Problem:** who does what, in which context, how often, current alternative, evidence and cost. A founder's need is a valid origin story but not a customer survey. Separate a documented eligibility workflow from measured preparation time.
 
-**Solution/product:** show a concrete input → decision/action → output; connect benefits to mechanism; explain material constraints in plain language. A prototype screenshot and an annotated mockup have different labels.
+**Competition:** actual product/source/date; full user journey; publicly described versus personally tested; output quality; price period, tax, seats and limits. Include manual work and generic tools when relevant. No checkbox advantage matrix with unsupported absences. State a differentiating mechanism, then a fair test that could falsify the supposed advantage.
 
-**Alternatives:** direct products, manual workflow and relevant general tools. Same task/date/plan/seat/tax/output basis. Use advertised / independently tested / not confirmed states. No ornamental competitor checkmark table with unsupported crosses.
+**Market:** potential users are not paying buyers. Build a bottom-up denominator; avoid double counting institutions and their participants. Identify geography, stage, job-to-be-done, obtainable channel and paid months. Unsupported market-size numbers remain open questions or explicit scenarios.
 
-**Market:** relevant unique buyers, spending unit, paid period, access constraints and reach. Research denominator first. No grant budget as SaaS TAM, double counted institutions and companies, or unjustified 1% SOM.
+**BM:** buyer, charging unit, included scope, extra usage, renewal reason and cost responsibility. Differentiate software workflow fees from AI plan/CLI/API fees and professional support. Check terms for every proposed provider connection; no universal plan compatibility promise.
 
-**Business/economics:** separate buyer, user, payer and billable event. Include gross/net treatment, plan period, caps, churn, acquisition and support cost. Revenue does not equal contribution; annualized final month does not equal year-one total. Missing data stays unresolved.
+**Metrics:** separate actuals, historical snapshots, targets and calculations. Each ratio needs numerator, denominator, time window, definition and tax/currency basis. A last-month revenue times 12 is a run-rate, not first-year cumulative revenue. A GitHub star is not an installation, customer or sale.
 
-**Traction/team/ask:** code availability, tests, installations, active users, payment and renewal separately. Include only stated/verified credentials. A founder's breadth of understanding is a working principle, not proof of expertise in every discipline. Funding ask needs amount, runway and milestones or a clearly marked missing field; pilot ask can be precise without inventing investors.
+**Ask:** amount only if supplied/approved, capital-use categories, runway assumptions, measurable milestone unlocked. For a pilot ask, identify desired user/partner and test scope rather than inventing investment terms.
 
 ## Korean copy audit
 
-Do not assert that grammar identifies AI authorship. The issue is usefulness and naturalness.
+| Before | Better candidate | Reason |
+|---|---|---|
+| 지원사업 탐색 과정을 혁신합니다 | 내 사업에 맞는 지원처 | Concrete job, no unsupported grand claim |
+| 경쟁사와 다른 솔루션을 제공합니다 | 추천 근거에서 준비 과제까지 | A mechanism that can be demonstrated |
+| 매출과 가정을 구분했습니다 | 첫해 누적 매출과 연 환산 매출 | Content rather than editor's actions |
+| 안전한 로컬 AI를 제공합니다 | 문서 저장 위치와 AI 전송 범위 | Avoids implying offline inference |
+| 고객 중심의 혁신적인 미래 | 첫 유료 고객까지 남은 검증 | Stage-appropriate next step |
 
-| Weak headline | Better topical alternative |
-|---|---|
-| 공고마다 서류를 다시 확인합니다 | 공고마다 반복되는 조건 확인 |
-| 기능 구독과 연산비를 구분했습니다 | 기능 구독료와 AI 사용료 |
-| 첫해와 연환산 매출을 혼동하지 않습니다 | 첫해 누적 매출과 연 환산 매출 |
-| 혁신적인 솔루션을 제공합니다 | 요청에서 검토까지 한 작업 흐름 |
-| 기존 기업과 달리 완벽하게 해결합니다 | 같은 작업에서 비교할 정확도와 준비시간 |
+Do not adopt these as company facts. Keep an accurate user's wording when it is better. Repeated English section labels, abstract verbs, excessive slash/ampersand labels and uniform three-card layouts also deserve review. Titles, bullets and speaker notes need separate edits.
 
-The alternatives are editorial examples, not claims about any company. Repeated '~합니다/~됩니다/~했습니다', '~가 아닌', '혁신적/압도적/완벽한/100%' and author narration usually need review. An intentional plain sentence can stay. Do not replace every claim with a vague noun such as '혁신' or remove an essential condition merely to shorten a title.
+Speaker text may naturally use 합니다/입니다. For example: '먼저 사용 흐름을 보시겠습니다. 화면은 설계 예시이며, 실제 고객 성과는 다음 실증에서 확인할 계획입니다.' Do not make the speaker read compressed noun fragments. Avoid constant '앞서 말씀드렸듯', '이를 통해', '차별화된 혁신' when a direct sentence works.
 
-Visible copy: title + one takeaway + evidence or useful visual. Keep text and labels consistent with the user's product terminology. Spoken copy: complete, conversational, polite where suitable. Do not paste terse noun strings into a spoken script. Keep stage cues and sources visibly separate from words to say.
+## Visual and rehearsal gates
 
-## Delivery budgets (starting assumptions, not research facts)
+One intended takeaway per slide. Prefer a clear product flow, readable evidence table or honest chart to ornamental graphics. Main-slide text usually needs substantially larger type than notes. Validate at the actual display size; do not claim a universal font size guarantees legibility.
 
-Choose slides by duration and story. For 5 minutes, first attempt 7–9 main slides; for 8–10 minutes, 10–14; for 15 minutes, 13–18. Revise after actual rehearsal. Q&A and appendix time are separate. Avoid treating these ranges as mandatory.
+Check consistent margins, contrast, units, axis labels, dates and source markers. No unlabelled 3D, invented screenshots or cumulative charts mislabeled as monthly growth. Use appendix navigation IDs. Read the script aloud with click/pause/demo time; record measured duration separately from the compiler's adjustable estimate.
 
-The compiler counts whitespace-separated units (Korean eojeol / English words). Default 120 units/minute is only a tunable heuristic, not a measured Korean population norm. Count transitions and planned pause/demo time. Mark estimates in the draft; replace them with recorded timing during rehearsal. Do not speed-read dense text to fit.
+## Reuse across sessions
 
-Each script segment should orient the audience, explain the slide's evidence, then bridge to the next question. For an unfamiliar metric, explain the unit before the value. Avoid repeating '이제 다음 슬라이드입니다' at every transition. The opening defines the product; the close repeats the specific opportunity and asks for the relevant next step.
-
-## Visual direction
-
-Use the user's brand/template. Default to restrained, high-contrast layouts, generous margins and a readable Korean font. Do not default to navy gradients, decorative 3D, identical rounded cards on every page, tiny footnotes, fake product screenshots, or clipped tables. Use a workflow diagram for sequence, a real product view for interaction, a labeled chart for measurements, and a compact comparison for alternatives. Design decisions are not factual guarantees.
-
-For editable deliverables, preserve native text, shapes and charts. The bundled baseline uses editable text but does not pretend to implement custom charts or artwork. A host-native slide engine may implement the storyboard's visual specifications. Verify fonts and wrapping on actual rendered output; never distribute font files with this skill.
-
-## Q&A and release gates
-
-Prepare direct answers about customer, competitors, market denominator, pricing, retention, margin, moat, data boundaries, integration permission, team and ask. Each answer references a real appendix ID and claim/source IDs. Start with the answer, then evidence and limitations. Missing evidence is a next verification task, not permission to bluff.
-
-Before release:
-1. Compare source versions; preserve user decisions; get approval for material changes.
-2. Check every financial figure in a calculation sheet/script with assumptions.
-3. Audit all titles, subtitles, tables, captions, notes and scripts—not only the cover.
-4. Check main/appendix IDs and Q&A jumps. Rebuild from one canonical version.
-5. Render every slide and script page; inspect Korean glyphs, clipping, contrast and charts.
-6. Read the script aloud, record actual timing, and reduce text if necessary.
-7. Distinguish automated checks, visual review, factual review and rehearsal in the report.
-
-Publishing the skill must never publish the user's business plan by accident. Keep project-state and outputs local unless a specific upload is authorized.
+Keep the canonical JSON, input hashes and local decision log together. State updates are append-only summaries of actual choices, not hidden chain-of-thought. A new agent reads them before revising. Never commit private project state into the public skill package.

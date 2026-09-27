@@ -1,18 +1,10 @@
 {
-  "vat_rate": 0.1,
-  "monthly_fixed_cost": 100000,
-  "monthly_team_pay": 0,
-  "products": [
-    {
-      "name": "가상 월 구독",
-      "price_including_vat": 11000,
-      "price_period_months": 1,
-      "monthly_variable_cost": 1000,
-      "active_customers": [
-        0,
-        5,
-        10
-      ]
-    }
+  "months": 3,
+  "vat_rate": "0.10",
+  "monthly_fixed_cost": "100000",
+  "monthly_team_pay": "200000",
+  "plans": [
+    {"name": "Synthetic only", "tax_inclusive_price": "11000", "price_period_months": 1,
+     "monthly_variable_cost": "2000", "active_by_month": [0, 10, 20]}
   ]
 }
