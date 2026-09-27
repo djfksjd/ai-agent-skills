@@ -11,7 +11,7 @@ LLM 코딩 에이전트(Claude Code)가 실무를 수행하도록 만든 재사�
 | **[hwpx-document-engine](skills/hwpx-document-engine)** | 한글(HWPX) 문서 생성·읽기·편집 | OWPML XML을 직접 조작해 **서식을 보존**하며 내용만 치환. 템플릿·검증 테스트 포함 |
 | **[content-marketing-team](skills/content-marketing-team)** | URL 1개 → 전 플랫폼 마케팅 콘텐츠 자동 생성 | **멀티 에이전트 오케스트레이션**(리서치→기획→카피→비주얼)으로 숏폼·스레드·카드뉴스 동시 산출 |
 | **[emotional-tts-pipeline](skills/emotional-tts-pipeline)** | Qwen3-TTS 기반 한국어/다국어 음성 합성 | 감정 나레이션 생성 파이프라인. 플러그인 구조로 배포 가능 |
-| **[IR & SCRIPT](skills/ir-script)** | 국내외 IR 조사 → PPT·발표대본·Q&A | 출처·문체·재무 가정 점검, 슬라이드와 대본 정합성 검사, 실행 가능한 생성기 |
+| **[IR & SCRIPT](skills/ir-script)** | 국내외 사례 조사 → IR 발표자료·대본·Q&A | 출처·가정 관리, 슬라이드/대본 동기화, 편집형 출력·문체·재무 검증 |
 
 ## 설계 원칙
 
@@ -26,7 +26,7 @@ skills/
 ├── hwpx-document-engine/      # Python + OWPML XML, scripts/templates/tests
 ├── content-marketing-team/    # 멀티 에이전트 프롬프트 + 산출 파이프라인
 ├── emotional-tts-pipeline/    # Qwen3-TTS 플러그인 + 요구사항
-└── ir-script/                # IR & SCRIPT: research, deck, script, Q&A, QA
+└── ir-script/                # IR 사례 조사·발표자료·대본·Q&A·정합성 검증
 ```
 
 ---

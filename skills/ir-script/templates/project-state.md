@@ -1,25 +1,29 @@
-# Project state — private local working record
-
-Do not publish this file or source attachments without explicit permission.
+# Project state — LOCAL, not for public upload
 
 ## Contract
-Company / audience / stage / purpose / language:
-Main talk seconds / Q&A seconds / live or send-ahead / requested files:
-Brand and copy preferences / user decisions / next decision or ask:
+Company / audience / stage / goal / ask / language:
+Talk seconds excluding Q&A / requested formats / branding:
 
-## Input versions
-| Input | SHA-256 | Date | Actual main/appendix count | Read scope | Role |
+## Inputs
+| File | SHA-256 | Date | Actual main/appendix count | Read scope | Role |
 |---|---|---|---|---|---|
 
 ## Reconciliation
-Conflicting versions, slide IDs, script order and appendix mapping:
-Canonical input and reason / material changes awaiting approval:
+Conflicting filenames/counts/order:
+Canonical version and reason (or unresolved choice):
+Original user terminology/decisions:
+Proposed changes, not yet agreed:
 
 ## Research
-Queries actually run / sources opened / access gaps:
-Claim statuses and exact support / observed reference sequence vs proposed sequence:
+Queries and source-register location:
+Actually observed sections/pages/timestamps:
+Unavailable/metadata-only references:
+Verified / user-provided / hypothesis / target / calculation / unverified claims:
 
-## Release
-Three takeaways / selected order / canonical deck.json and hash:
-Actual tests / rendered pages inspected / rehearsal status:
-Unresolved issues / next action / output manifest:
+## Story and release
+Three takeaways / two candidate orders / selected reason:
+Canonical deck.json and hash:
+Slide/script/appendix mapping:
+Tests actually run and renders inspected:
+Outputs and release manifest:
+Unresolved questions / next action:
