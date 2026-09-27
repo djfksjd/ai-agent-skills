@@ -1,25 +1,31 @@
-# Project state — private local working record
+# Local project state
 
-Do not publish this file or source attachments without explicit permission.
+Private working record. Do not commit inputs or this filled record without permission.
 
-## Contract
-Company / audience / stage / purpose / language:
-Main talk seconds / Q&A seconds / live or send-ahead / requested files:
-Brand and copy preferences / user decisions / next decision or ask:
+## Presentation contract
+Company / stage / audience / language / purpose / ask:
+Live or send-ahead / talk seconds / Q&A seconds / formats:
+Brand and copy constraints:
 
-## Input versions
-| Input | SHA-256 | Date | Actual main/appendix count | Read scope | Role |
+## Inputs
+| Filename | SHA-256 | Date | Main / appendix counts | Read scope | Role |
 |---|---|---|---|---|---|
 
-## Reconciliation
-Conflicting versions, slide IDs, script order and appendix mapping:
-Canonical input and reason / material changes awaiting approval:
+## Version reconciliation
+Conflicts:
+Canonical source and reason:
+Preserved source terms and user decisions:
+Proposed changes awaiting approval:
 
 ## Research
-Queries actually run / sources opened / access gaps:
-Claim statuses and exact support / observed reference sequence vs proposed sequence:
+Source IDs, access levels, observed sections/pages/timestamps:
+Unseen or unavailable material:
+Claims by status and original dates:
+Observed reference order vs proposed project order:
 
-## Release
-Three takeaways / selected order / canonical deck.json and hash:
-Actual tests / rendered pages inspected / rehearsal status:
-Unresolved issues / next action / output manifest:
+## Production
+Three takeaways / chosen narrative / main vs appendix:
+Canonical deck.json path and hash:
+Files, manifest and version:
+Tests actually run / pages rendered and reviewed:
+Untested platforms / open questions / next action:

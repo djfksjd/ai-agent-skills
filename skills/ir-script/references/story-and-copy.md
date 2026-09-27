@@ -1,74 +1,67 @@
-# Story, copy and delivery
+# Narrative, copy and presentation design
 
-These are authored editorial defaults informed by R03–R09, not quotations or a universal winning template. Select a narrative based on evidence, objective and time.
+These are original working recipes synthesized from the research ledger, not verbatim sequences of the linked videos. The user's material and an actual judging rubric take precedence.
 
-## Narrative choices
+## Pick the right contract
 
-| Situation | Candidate sequence | What must support it |
+| Situation | Possible order | Evidence that should lead |
 |---|---|---|
-| Pre-launch / pilot | Product definition → founder reason → documented problem → product use → mechanism → alternatives → first buyer/market → model → validation → team → ask | Honest separation of founder intent, documented workflow and unmeasured pain |
-| Clear workflow product | Product use → customer task → friction today → mechanism → alternatives → buyer → pricing → evidence → route to market → team/ask | A real or explicitly labeled design example, not a fake live demo |
-| Measurable traction | Specific traction → product/customer → retention and acquisition → alternatives → market → economics → milestones → team → use of funds | Actual cohorts, dates, unit definitions and repeatability; not stars or signups called revenue |
-| Listed-company results | Period/basis → key results → segment drivers → costs/cash → outlook → Q&A | Period-consistent disclosures; no invented guidance |
-| Korean evaluation pitch | Clear product → criterion-mapped evidence → customer/market/model → feasibility/team → next milestone | Actual competition rubric; do not assume a Korean audience always requires a fixed PSST order |
+| Early product / pilot pitch | product definition → founder/customer problem → current alternatives → mechanism/demo → initial buyer/market → BM → validation/development → acquisition → team/plan → ask | documented pain, concrete workflow, credible next experiment |
+| Startup with repeatable revenue | product definition + strongest measured traction → customer and problem → product advantage → retention/expansion → market → acquisition/economics → team → capital and milestones | dated revenue/cohort evidence and its definitions |
+| Deep-tech / hardware | use case → failure/cost of current process → mechanism/prototype → test evidence and limits → industrial buyer and adoption → manufacturing/regulatory path → market/economics → team/capital | comparable tests, technical maturity, unit production assumptions |
+| Public-company earnings | reporting basis → period summary → business drivers → segment/financial details → capital/cash → outlook/risks → Q&A | consistent periods, denominators and audited/provisional status |
+| Competition with explicit rubric | map required scoring sections into a coherent customer story | the supplied rubric and actual evidence, not generic country stereotypes |
 
-Generate two plausible orders, explain the selected one in the private structure report, and remove duplicate ideas. Short stage pitches create interest; send-ahead decks must stand alone. Main deck should still answer what, who, why, how, evidence, business and next decision. Do not force every topic into a separate slide.
+Choose two candidate structures and explain why one suits the company. Korea versus overseas is a source-selection dimension, not a reason to stereotype investor preferences. Research examples at similar stages and purposes. A 5-minute live pitch and a send-ahead diligence deck are different products.
 
-## Coverage gates
+## Coverage and problem confirmation
 
-**Origin/problem:** founder's actual experience and motivation; current workflow; documented constraints; any interviews with dates, sample and method; unmeasured cost labeled. Do not invent a failure story.
+Founder origin: why this product, why this founder, what real experience is supported? A stated desire to use one's own product is not proof of hours saved or customer pain. Separate each level: founder intent → documented workflow → interview testimony → measured baseline → comparative result.
 
-**Solution/product:** show a concrete input → decision/action → output; connect benefits to mechanism; explain material constraints in plain language. A prototype screenshot and an annotated mockup have different labels.
+Problem evidence record: customer and task, today's tools, repeated action, observed cost, source/method/date, sample size, what remains untested. If interviews do not exist, propose them and label targets; never fabricate quotes.
 
-**Alternatives:** direct products, manual workflow and relevant general tools. Same task/date/plan/seat/tax/output basis. Use advertised / independently tested / not confirmed states. No ornamental competitor checkmark table with unsupported crosses.
+Competition record: buyer/task, recommendation/discovery capability, production/output, onboarding, manual alternatives, price period, tax, seats, usage caps, publicly described vs personally tested, last checked URL. Compare conditions fairly. A missing feature on a pricing page is not proof of absence. An attractive comparison graphic cannot replace evidence.
 
-**Market:** relevant unique buyers, spending unit, paid period, access constraints and reach. Research denominator first. No grant budget as SaaS TAM, double counted institutions and companies, or unjustified 1% SOM.
+Market: define unique buying accounts first. Separate serviceable scope from broader sector expenditure. Record intersections/double counting, payment frequency and seasonality. Reconcile market and go-to-market: who will be reached, how, at what cost and over what period? A target is not measured demand.
 
-**Business/economics:** separate buyer, user, payer and billable event. Include gross/net treatment, plan period, caps, churn, acquisition and support cost. Revenue does not equal contribution; annualized final month does not equal year-one total. Missing data stays unresolved.
+BM: identify payer, paid job, billing unit, included/excess use and variable costs. Free features should have a clear activation role. Enterprise price requires a bounded service/seat/support scope. Individual CLI subscription use, API-key use and company-managed inference are distinct routes. Provider policy and retention must be checked at execution time.
 
-**Traction/team/ask:** code availability, tests, installations, active users, payment and renewal separately. Include only stated/verified credentials. A founder's breadth of understanding is a working principle, not proof of expertise in every discipline. Funding ask needs amount, runway and milestones or a clearly marked missing field; pilot ask can be precise without inventing investors.
+Finance: show baseline and sensitivity, not just an optimistic curve. Avoid equating year-end annualized revenue with first-year revenue. Include founder/team pay or explicitly flag exclusion. Label tax, currency, period and active versus acquired customer counts.
 
-## Korean copy audit
+## Titles, body and speech
 
-Do not assert that grammar identifies AI authorship. The issue is usefulness and naturalness.
-
-| Weak headline | Better topical alternative |
+| Overwritten slide title | More concrete alternative |
 |---|---|
-| 공고마다 서류를 다시 확인합니다 | 공고마다 반복되는 조건 확인 |
-| 기능 구독과 연산비를 구분했습니다 | 기능 구독료와 AI 사용료 |
-| 첫해와 연환산 매출을 혼동하지 않습니다 | 첫해 누적 매출과 연 환산 매출 |
-| 혁신적인 솔루션을 제공합니다 | 요청에서 검토까지 한 작업 흐름 |
-| 기존 기업과 달리 완벽하게 해결합니다 | 같은 작업에서 비교할 정확도와 준비시간 |
+| 모든 지원 과정을 혁신적으로 연결합니다 | 공고 선택에서 제출본까지 |
+| 시장과 고객을 명확하게 구분했습니다 | 첫 고객과 구매 조건 |
+| 경쟁사보다 압도적인 가치를 제공합니다 | 같은 과제에서 비교할 차이 |
+| 첫해 매출로 혼동하지 않도록 했습니다 | 첫해 누적 매출과 연 환산액 |
+| 고객의 시간을 획기적으로 줄입니다 | 확인 시간을 줄이는 작업 흐름 |
 
-The alternatives are editorial examples, not claims about any company. Repeated '~합니다/~됩니다/~했습니다', '~가 아닌', '혁신적/압도적/완벽한/100%' and author narration usually need review. An intentional plain sentence can stay. Do not replace every claim with a vague noun such as '혁신' or remove an essential condition merely to shorten a title.
+These are generic copy examples, not claims about an actual company. Do not invent '50% faster' to make a title concrete. Editing must preserve the original meaning and uncertainty. Not every complete sentence is bad; repetitive explanatory endings and editorial narration are the problem. Automated style warnings are not AI-authorship detection.
 
-Visible copy: title + one takeaway + evidence or useful visual. Keep text and labels consistent with the user's product terminology. Spoken copy: complete, conversational, polite where suitable. Do not paste terse noun strings into a spoken script. Keep stage cues and sources visibly separate from words to say.
+Visible text: one takeaway, specific nouns, clear units, few supporting elements. Avoid front-loading formal English headings when a Korean title carries the meaning. Do not simply replace every sentence with an awkward noun pile.
 
-## Delivery budgets (starting assumptions, not research facts)
+Spoken layer: opening claim → explanation or small example → evidence/limitation when material → natural bridge to the next question. Use normal spoken politeness in Korean. Do not read citations, developer notes or stage directions aloud. Keep these in separate fields. Avoid a repetitive '다음은 ... 설명하겠습니다' at every transition.
 
-Choose slides by duration and story. For 5 minutes, first attempt 7–9 main slides; for 8–10 minutes, 10–14; for 15 minutes, 13–18. Revise after actual rehearsal. Q&A and appendix time are separate. Avoid treating these ranges as mandatory.
+Q&A: answer the question first, then evidence, then uncertainty/next verification. Link the appendix actually present in this release. A generic 'huge market' or unsupported 'no competitors' is not an answer.
 
-The compiler counts whitespace-separated units (Korean eojeol / English words). Default 120 units/minute is only a tunable heuristic, not a measured Korean population norm. Count transitions and planned pause/demo time. Mark estimates in the draft; replace them with recorded timing during rehearsal. Do not speed-read dense text to fit.
+## Time and visual production
 
-Each script segment should orient the audience, explain the slide's evidence, then bridge to the next question. For an unfamiliar metric, explain the unit before the value. Avoid repeating '이제 다음 슬라이드입니다' at every transition. The opening defines the product; the close repeats the specific opportunity and asks for the relevant next step.
+Allocate time before slide count. Account for pauses, demos and transition. The baseline generator estimates nonspace characters/minute for Korean or words/minute for other languages; defaults are merely editable assumptions, not scientific speaking-rate standards. Read aloud and record real timing before calling a script rehearsed.
 
-## Visual direction
+Build a storyboard with slide ID, question, title, takeaway, claim IDs, proposed visual, seconds, speaker text, cue and transition. The baseline compiler accepts cover/content layouts only; use the host's richer slide engine for charts, matrices and product diagrams. Keep the same content IDs and evidence when rendering elsewhere.
 
-Use the user's brand/template. Default to restrained, high-contrast layouts, generous margins and a readable Korean font. Do not default to navy gradients, decorative 3D, identical rounded cards on every page, tiny footnotes, fake product screenshots, or clipped tables. Use a workflow diagram for sequence, a real product view for interaction, a labeled chart for measurements, and a compact comparison for alternatives. Design decisions are not factual guarantees.
+Design by content: an actual product image for use, flow for process, aligned table for fair comparison, labeled chart for metrics, simple milestones for execution. Avoid repeated three-card grids, gratuitous gradients, corporate navy defaults, fake screenshots or decorative 3D. Respect user branding rather than enforcing these preferences globally. A physical prototype may merit 3D only when it explains mechanics.
 
-For editable deliverables, preserve native text, shapes and charts. The bundled baseline uses editable text but does not pretend to implement custom charts or artwork. A host-native slide engine may implement the storyboard's visual specifications. Verify fonts and wrapping on actual rendered output; never distribute font files with this skill.
+Starting defaults for a live deck: 16:9, generous margins, title around 28–36pt, body around 18–24pt, accessible contrast, consistent type hierarchy. Real projected readability decides; these are heuristics, not a standard. Add source/status labels without making them the headline. Keep full evidence in notes/appendix; material limitations stay near the claim.
 
-## Q&A and release gates
+## Release checks
 
-Prepare direct answers about customer, competitors, market denominator, pricing, retention, margin, moat, data boundaries, integration permission, team and ask. Each answer references a real appendix ID and claim/source IDs. Start with the answer, then evidence and limitations. Missing evidence is a next verification task, not permission to bluff.
-
-Before release:
-1. Compare source versions; preserve user decisions; get approval for material changes.
-2. Check every financial figure in a calculation sheet/script with assumptions.
-3. Audit all titles, subtitles, tables, captions, notes and scripts—not only the cover.
-4. Check main/appendix IDs and Q&A jumps. Rebuild from one canonical version.
-5. Render every slide and script page; inspect Korean glyphs, clipping, contrast and charts.
-6. Read the script aloud, record actual timing, and reduce text if necessary.
-7. Distinguish automated checks, visual review, factual review and rehearsal in the report.
-
-Publishing the skill must never publish the user's business plan by accident. Keep project-state and outputs local unless a specific upload is authorized.
+1. Content: source-supported claims, no invented interviews/customers/ask, correct dates, fair competitors and market denominator.
+2. Commercial: payer and usage costs coherent; CLI/API route not conflated; goals versus results clear.
+3. Editorial: all titles, bodies, tables, captions and notes checked; remove repeated explanatory voice without weakening meaning.
+4. Synchronization: slide IDs/counts/order/titles/main-appendix and all Q&A references agree.
+5. Timing: estimates identified, actual rehearsal separately recorded.
+6. Visual: render every slide and every script page; check glyphs, overflow, overlaps, table/chart units and page breaks.
+7. Delivery: source JSON + immutable versioned output folder + file manifest + actual QA scope. Preserve original user files; never claim cloud/account memory restoration.

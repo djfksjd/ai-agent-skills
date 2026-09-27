@@ -1,53 +1,47 @@
 #!/usr/bin/env python3
-"""Explicit monthly revenue scenario, not cash flow, accounting advice or a forecast."""
+"""Illustrative monthly revenue model; not cash flow, accounting or tax advice."""
 from __future__ import annotations
-import argparse
-import json
 from decimal import Decimal, ROUND_CEILING
+import argparse,json,sys
 from pathlib import Path
 
-
-def number(value, name: str) -> Decimal:
-    if isinstance(value, bool): raise ValueError(name + " must be numeric")
-    d = Decimal(str(value))
-    if not d.is_finite() or d < 0: raise ValueError(name + " must be finite and nonnegative")
+def dec(x):
+    if isinstance(x,bool):raise ValueError('Boolean is not a financial input')
+    try:d=Decimal(str(x))
+    except Exception as e:raise ValueError('Invalid numeric input') from e
+    if not d.is_finite() or d<0:raise ValueError('Financial inputs must be finite and nonnegative')
     return d
 
-
-def model(data: dict) -> dict:
-    vat = number(data["vat_rate"], "vat_rate")
-    fixed = number(data["monthly_fixed_cost"], "monthly_fixed_cost")
-    pay = number(data.get("monthly_team_pay", 0), "monthly_team_pay")
-    products = data["products"]
-    if not isinstance(products, list) or not products: raise ValueError("products required")
-    months = len(products[0]["active_customers"])
-    if months < 1: raise ValueError("At least one month required")
-    revenue, variable = [Decimal(0)] * months, [Decimal(0)] * months
-    per_product = []
+def calculate(data):
+    months=data['months']
+    if type(months) is not int or not 1<=months<=120:raise ValueError('months must be an integer from 1 to 120')
+    vat=dec(data['vat_rate']);fixed=dec(data['monthly_fixed_cost']);payroll=dec(data['monthly_payroll'])
+    revenue=[Decimal(0)]*months;variable=[Decimal(0)]*months;contributions={}
+    products=data['products']
+    if not isinstance(products,list) or not products:raise ValueError('products required')
+    names=set()
     for p in products:
-        counts = p["active_customers"]
-        if len(counts) != months: raise ValueError("Monthly customer series must have equal lengths")
-        period = number(p["price_period_months"], "price_period_months")
-        if period == 0: raise ValueError("price_period_months must be positive")
-        net = number(p["price_including_vat"], "price") / (1 + vat) / period
-        cost = number(p["monthly_variable_cost"], "variable_cost")
-        margin = net - cost
-        for i, v in enumerate(counts):
-            count = number(v, "active_customers")
-            if count != count.to_integral_value(): raise ValueError("Customer counts must be integers")
-            revenue[i] += net * count; variable[i] += cost * count
-        per_product.append({"name": p["name"], "monthly_net_price": float(net),
-                            "single_product_break_even_customers": int(((fixed + pay) / margin).to_integral_value(rounding=ROUND_CEILING)) if margin > 0 else None})
-    return {"monthly_net_revenue": [round(float(x), 2) for x in revenue],
-            "cumulative_net_revenue": round(float(sum(revenue)), 2),
-            "last_month_annualized_revenue": round(float(revenue[-1] * 12), 2),
-            "modeled_operating_result": round(float(sum(revenue) - sum(variable) - (fixed + pay) * months), 2),
-            "products": per_product,
-            "limitations": "Assumed active customers; annual price allocated evenly by month. No cash receipts, deferred revenue, refunds, financing or tax/accounting determination. Add all acquisition/support/payroll costs explicitly."}
+        if not isinstance(p['name'],str) or not p['name'].strip() or p['name'] in names:raise ValueError('Unique product name required')
+        names.add(p['name']);period=p['price_period_months']
+        if type(period) is not int or period<1:raise ValueError('price_period_months must be positive integer')
+        price=dec(p['tax_inclusive_price'])/(1+vat)/period;cost=dec(p['monthly_variable_cost'])
+        counts=p['active_customers']
+        if not isinstance(counts,list) or len(counts)!=months:raise ValueError('One active_customer count per month required')
+        contributions[p['name']]=price-cost
+        for i,n in enumerate(counts):
+            if type(n) is not int or n<0:raise ValueError('Customer counts must be nonnegative integers')
+            revenue[i]+=price*n;variable[i]+=cost*n
+    f=lambda x:float(x.quantize(Decimal('.01')))
+    profits=[r-v-fixed-payroll for r,v in zip(revenue,variable)]
+    return {'currency':data.get('currency','unspecified'),'basis':'Illustrative tax-exclusive, straight-line monthly allocation; not cash flow',
+      'monthly_revenue':[f(x) for x in revenue],'monthly_variable_cost':[f(x) for x in variable],
+      'monthly_result':[f(x) for x in profits],'cumulative_revenue':f(sum(revenue)),
+      'cumulative_result':f(sum(profits)),'last_month_annualized_revenue':f(revenue[-1]*12),
+      'single_product_break_even':{name:int(((fixed+payroll)/c).to_integral_value(rounding=ROUND_CEILING)) if c>0 else None for name,c in contributions.items()},
+      'excluded':['cash receipts','deferred revenue','refunds','payment timing','acquisition costs unless included in fixed/variable inputs']}
 
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description=__doc__); parser.add_argument("input", type=Path)
-    args = parser.parse_args()
-    try: print(json.dumps(model(json.loads(args.input.read_text(encoding="utf-8"))), ensure_ascii=False, indent=2))
-    except (ValueError, KeyError, TypeError, OSError) as exc: parser.exit(1, str(exc) + "\n")
+def main():
+    a=argparse.ArgumentParser(description=__doc__);a.add_argument('input');x=a.parse_args()
+    try:print(json.dumps(calculate(json.loads(Path(x.input).read_text(encoding='utf-8'))),ensure_ascii=False,indent=2,allow_nan=False));return 0
+    except (ValueError,KeyError,TypeError,OSError) as e:print('ERROR: '+str(e),file=sys.stderr);return 2
+if __name__=='__main__':raise SystemExit(main())

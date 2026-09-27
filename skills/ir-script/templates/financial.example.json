@@ -1,17 +1,19 @@
 {
-  "vat_rate": 0.1,
-  "monthly_fixed_cost": 100000,
-  "monthly_team_pay": 0,
+  "currency": "KRW",
+  "months": 3,
+  "vat_rate": "0.1",
+  "monthly_fixed_cost": "1000",
+  "monthly_payroll": "500",
   "products": [
     {
-      "name": "가상 월 구독",
-      "price_including_vat": 11000,
+      "name": "Synthetic plan",
+      "tax_inclusive_price": "1100",
       "price_period_months": 1,
-      "monthly_variable_cost": 1000,
+      "monthly_variable_cost": "200",
       "active_customers": [
         0,
-        5,
-        10
+        1,
+        2
       ]
     }
   ]
